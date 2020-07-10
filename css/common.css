@@ -282,7 +282,21 @@ img {
   margin: 10px auto;
   padding-right: 30px;
   float: left;
-  display:inline-block; 
+  display:inline-block;
+}
+
+#slack{
+  position: relative;
+}
+
+.circle{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(235, 79, 157);
+  position: relative;
+  z-index: 10;
 }
 
 .item {
@@ -295,7 +309,7 @@ img {
   margin-bottom: 3rem;
   padding: 3rem;
   width: 35%;
-  background-color: rgba(0,0,0,10);
+  background-color: rgba(0,0,0,30);
 }
 
 .item img {
@@ -305,9 +319,18 @@ img {
   height: auto;
 }
 
+.item h3{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 0;
+}
+
 .activity-box-text{
   text-align: center;
 }
+
 
 
 .footer {

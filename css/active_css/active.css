@@ -35,11 +35,27 @@
   display:inline-block;
 }
 
-#slack{
-  position: relative;
+.h3:before{
+  content: "丸";
 }
 
-.circle{
+.activity-box h3::before {
+  position: absolute;
+  display:block;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  margin: auto;
+  z-index: -1;
+  left: 5px;
+  content: "";
+  background: #cc008a;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* .circle{
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -47,7 +63,7 @@
   background: rgb(235, 79, 157);
   position: relative;
   z-index: 10;
-}
+} */
 
 .item {
   display: flex;
@@ -59,7 +75,7 @@ main .item div {
   margin-bottom: 3rem;
   padding: 3rem;
   width: 35%;
-  background-color: rgba(0,0,0,30);
+  background-color: rgba(255,255,255,0.105);
 }
 
 .item img {
@@ -73,6 +89,8 @@ main .item div {
   text-align: left;
   font-size: 3rem;
   font-weight: bold;
+  padding-left: 30px;
+  position: relative;
   z-index: 0;
 }
 
